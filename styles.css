@@ -29,7 +29,7 @@ p, li {
 }
 
 .logo-small > p {
-  color: #06e0d0; /* Setting the color of the logo text */
+  color: #06e0d0; /* Setting the color of the tajam text */
   font-size: 1.25rem; /* Adjusted font size for the logo text */
 }
 
@@ -77,6 +77,7 @@ header nav ul li a:hover {
 .hero-content {
   max-width: 75%;
   margin-bottom: 20%;
+  text-align: center;
 }
 
 /* Styling for hero content text */
@@ -87,6 +88,10 @@ header nav ul li a:hover {
   color: #FFFFFF; /* Setting the text color for hero content */
 }
 
+.hero-content hr {
+  border-color: #06e0d0;
+  width: 10%;
+}
 
 /* Styling for Our Story section */
 
