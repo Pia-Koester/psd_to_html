@@ -11,13 +11,13 @@
 }
 
 /* Styling for header */
-.logo {
+.logo-small {
   color: #06e0d0;
   font-size: 1.25rem;
   margin: 0 2%;
 }
 
-.logo img {
+.logo-small img {
   fill: #06e0d0;
   width: 1.5rem;
 }
@@ -74,7 +74,7 @@
 
 .our-story {
   display: flex;
-  width: 1000px;
+  width: 1000px; /*change this! - we don't want to give it a fixed width with px*/
   margin: auto;
   border: none;
   padding-top: 12%;
