@@ -1,84 +1,91 @@
+/* Importing Google Fonts for typography */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Open+Sans:wght@300&display=swap');
+
+/* Resetting default margin, padding, and box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* General styling that is applicable to the entire page*/s
-h1{
+
+/* General styling that is applicable to the entire page */
+
+/* Styling for the hero content */
+.hero-content h1 {
   font-family: 'EB Garamond', serif;
-  font-size: 3.815rem;
+  font-size: 3.815rem; /* Adjusted font size for the hero heading */
 }
 
+/* Styling for paragraphs and list items */
 p, li {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Styling for header */
+/* Styling for the header */
 
-.logo-small{
+/* Styling for the small logo */
+.logo-small {
   display: flex;
 }
 
-.logo-small img {
-  color: #06e0d0;
-  width: 1.5rem;
+.logo-small > p {
+  color: #06e0d0; /* Setting the color of the logo text */
+  font-size: 1.25rem; /* Adjusted font size for the logo text */
 }
 
-.logo-small >p {
-  color: #06e0d0;
-  font-size: 1.25rem;
-}
-
-/* flexbox behavior for the whole header section */
- .hero {
+/* Flexbox behavior for the whole header section */
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/psd_to_html/resources/bgk-header.png"); 
+  background-image: url("/psd_to_html/resources/bgk-header.png"); /* Background image for the hero section */
   background-repeat: no-repeat;
   background-size: cover;
- }
+}
 
- header nav {
+/* Styling for the header navigation menu */
+header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
- }
+}
 
- header nav .logo {
+header nav .logo {
   display: flex;
- }
+}
 
- header nav ul {
+header nav ul {
   display: flex;
- }
+}
 
- header nav ul li {
+header nav ul li {
   list-style: none;
-  padding: 2%
- }
+  padding: 2%;
+}
 
- header nav ul li a {
+header nav ul li a {
   text-decoration: none;
-  color: #FFFFFF;
- }
+  color: #FFFFFF; /* Setting the default link color in the navigation menu */
+}
 
- header nav ul li a:hover {
+header nav ul li a:hover {
   text-decoration: none;
-  color: #06e0d0;
- }
+  color: #06e0d0; /* Changing link color on hover in the navigation menu */
+}
 
- .hero-content {
+/* Styling for hero content container */
+.hero-content {
   max-width: 75%;
   margin-bottom: 20%;
- }
+}
 
- .hero-content h1, .hero-content p {
+/* Styling for hero content text */
+.hero-content h1,
+.hero-content p {
   padding: 10%;
   text-align: center;
-  color: #FFFFFF;
- }
+  color: #FFFFFF; /* Setting the text color for hero content */
+}
 
 
 /* Styling for Our Story section */
