@@ -3,12 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* General styling that is applicable to the entire page*/
-
-.purple {
-  background-color: #30235fae;
-  color: #FFFFFF;
-}
+/* General styling that is applicable to the entire page*/s
 
 /* Styling for header */
 .logo-small {
@@ -27,9 +22,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/psd_to_html/resources/hero_image.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: rgba(48, 35, 95, 0.85);
+  background: -webkit-linear-gradient(rgba(48, 35, 95, 0.85), rgba(48, 35, 95, 0.85)), url("/psd_to_html/resources/hero_image.png"); 
  }
 
  header nav {
