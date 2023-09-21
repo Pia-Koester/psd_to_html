@@ -72,6 +72,51 @@
 
 /* Styling for Our Story section */
 
+.our-story {
+  display: flex;
+  width: 1000px;
+  margin: auto;
+  border: none;
+  padding-top: 12%;
+  padding-left: 5%;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 15%;
+}
+
+.text {
+  flex: 2;
+  width: 70%;
+  display: inline-block;
+}
+
+.text > p {
+  margin: 10px;
+}
+
+.text h1 {
+  margin: 10px;
+}
+
+.button {
+  border: none;
+  color: #06e0d0;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin-left: 10px;
+  border: 1px solid #06e0d0;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
 /* Styling for video section */
 
 /* Styling for expertise section */
