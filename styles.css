@@ -7,6 +7,7 @@
 /* General styling that is applicable to the entire page*/s
 h1{
   font-family: 'EB Garamond', serif;
+  font-size: 3.815rem;
 }
 
 p, li {
@@ -34,9 +35,9 @@ p, li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(48, 35, 95, 0.85);
-  background: -webkit-linear-gradient(rgba(48, 35, 95, 0.85), rgba(48, 35, 95, 0.85)), url("/psd_to_html/resources/hero_image.png"); 
+  background-image: url("/psd_to_html/resources/bgk-header.png"); 
   background-repeat: no-repeat;
+  background-size: cover;
  }
 
  header nav {
@@ -73,7 +74,7 @@ p, li {
   margin-bottom: 20%;
  }
 
- .hero-content h1, p {
+ .hero-content h1, .hero-content p {
   padding: 10%;
   text-align: center;
   color: #FFFFFF;
