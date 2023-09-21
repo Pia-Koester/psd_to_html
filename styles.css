@@ -58,6 +58,11 @@
 
 /* Styling for expertise section */
 
+.expertise-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* Styling for Our Team section */
 
 /* Styling for contact section */
