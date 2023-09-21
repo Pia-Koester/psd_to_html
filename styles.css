@@ -5,7 +5,21 @@
 }
 /* General styling that is applicable to the entire page*/
 
+.purple {
+  background-color: #30235f90;
+}
 /* Styling for header */
+.logo {
+  color: #06e0d0;
+}
+
+/* flexbox behavior for the whole header section */
+ header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+ }
 
 /* Styling for Our Story section */
 
