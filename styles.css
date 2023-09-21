@@ -13,10 +13,13 @@
 /* Styling for header */
 .logo {
   color: #06e0d0;
+  font-size: 1.25rem;
+  margin: 0 2%;
 }
 
 .logo img {
   fill: #06e0d0;
+  width: 1.5rem;
 }
 
 /* flexbox behavior for the whole header section */
