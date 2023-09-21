@@ -1,20 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Open+Sans:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 /* General styling that is applicable to the entire page*/s
+h1{
+  font-family: 'EB Garamond', serif;
+}
+
+p, li {
+  font-family: 'Open Sans', sans-serif;
+}
 
 /* Styling for header */
-.logo-small {
-  color: #06e0d0;
-  font-size: 1.25rem;
-  margin: 0 2%;
+
+.logo-small{
+  display: flex;
 }
 
 .logo-small img {
-  fill: #06e0d0;
+  color: #06e0d0;
   width: 1.5rem;
+}
+
+.logo-small >p {
+  color: #06e0d0;
+  font-size: 1.25rem;
 }
 
 /* flexbox behavior for the whole header section */
@@ -24,6 +36,7 @@
   align-items: center;
   background: rgba(48, 35, 95, 0.85);
   background: -webkit-linear-gradient(rgba(48, 35, 95, 0.85), rgba(48, 35, 95, 0.85)), url("/psd_to_html/resources/hero_image.png"); 
+  background-repeat: no-repeat;
  }
 
  header nav {
@@ -55,12 +68,15 @@
   color: #06e0d0;
  }
 
- .hero-content h1 {
-  padding: 10%;
- }
-
  .hero-content {
   max-width: 75%;
+  margin-bottom: 20%;
+ }
+
+ .hero-content h1, p {
+  padding: 10%;
+  text-align: center;
+  color: #FFFFFF;
  }
 
 
@@ -98,7 +114,7 @@
 }
 
 .button {
-  border: none;
+  /* border: none; --> this has to be removed,  */ 
   color: #06e0d0;
   padding: 15px 32px;
   text-align: center;
