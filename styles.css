@@ -73,16 +73,18 @@ table {
 /* Styling for video section */
 .skyline {
   display: flex;
-  object-fit: cover;
   background-repeat: no-repeat;
-  overflow-x: hidden;
   flex-direction: column;
   background-color: black;
   align-items: center;
+  background-image: url("resources/bgk-middle.png");
+  background-size: cover;
+  padding: 10%;
 }
 
-h3 {
+.video-text {
   color: white;
+  margin-top: 2%;
 }
 
 /* Styling for expertise section */
