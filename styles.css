@@ -10,49 +10,35 @@
 
 /* General styling that is applicable to the entire page */
 
-/* Styling for the hero content */
-.hero-content h1 {
-  font-family: 'EB Garamond', serif;
-  font-size: 3.052rem; /* Adjusted font size for the hero heading */
-}
-
 /* Styling for paragraphs and list items */
 p, li {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Styling for the header */
-
 /* Styling for the small logo */
 .logo-small {
   display: flex;
+  align-items: center;
+  padding: 0.5rem;
 }
 
 .logo-small > p {
   background: #67D7CC;
-  background: linear-gradient(to right, #67D7CC 0%, #5289ac 90%);
+  background: linear-gradient(to right, #67D7CC 0%, #5289ac 60%);
   background-clip: padding-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.25rem; /* Adjusted font size for the logo text */
+  font-size: 1.75rem; /* Adjusted font size for the logo text */
+  margin-left: 0.75rem;
 }
 
-/* Flexbox behavior for the whole header section */
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("./resources/bgk-header.png"); /* Background image for the hero section */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* Styling for the header navigation menu */
 .navbar {
   width: 100vw;
   position: fixed;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: transparent;
 }
 
@@ -62,11 +48,13 @@ p, li {
 
 .navbar ul {
   display: flex;
+  width: 45%;
+  justify-content: space-evenly;
 }
 
 .navbar ul li {
   list-style: none;
-  padding: 2%;
+  padding: 0.5rem;
 }
 
 .navbar ul li a {
@@ -83,23 +71,44 @@ p, li {
   -webkit-text-fill-color: transparent;
 }
 
+/* Flexbox behavior for the whole hero section */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./resources/bgk-header.png"); /* Background image for the hero section */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Styling for the hero content */
+.hero-content h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2.75rem; /* Adjusted font size for the hero heading */
+  padding: 7rem 0 1.5rem 0;
+  text-align: center;
+  color: #FFFFFF; 
+}
+
+
 /* Styling for hero content container */
 .hero-content {
-  margin-bottom: 20%;
+  padding-bottom: 20%;
   text-align: center;
 }
 
 /* Styling for hero content text */
-.hero-content h1,
 .hero-content p {
-  padding: 10%;
+  max-width: 850px;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
   text-align: center;
   color: #FFFFFF; /* Setting the text color for hero content */
 }
 
 .hero-content hr {
   border-color: #06e0d0;
-  width: 10%;
+  width: 6%;
   text-align: center;
 }
 
