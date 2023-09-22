@@ -13,7 +13,7 @@
 /* Styling for the hero content */
 .hero-content h1 {
   font-family: 'EB Garamond', serif;
-  font-size: 3.815rem; /* Adjusted font size for the hero heading */
+  font-size: 3.052rem; /* Adjusted font size for the hero heading */
 }
 
 /* Styling for paragraphs and list items */
@@ -29,7 +29,10 @@ p, li {
 }
 
 .logo-small > p {
-  color: #06e0d0; /* Setting the color of the tajam text */
+  background: #67D7CC;
+background: linear-gradient(to right, #67D7CC 0%, #5289ac 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
   font-size: 1.25rem; /* Adjusted font size for the logo text */
 }
 
@@ -46,8 +49,7 @@ p, li {
 /* Styling for the header navigation menu */
 header nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-start
 }
 
 header nav .logo {
@@ -91,6 +93,7 @@ header nav ul li a:hover {
 .hero-content hr {
   border-color: #06e0d0;
   width: 10%;
+  text-align: center;
 }
 
 /* Styling for Our Story section */
