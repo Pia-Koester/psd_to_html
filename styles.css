@@ -1,5 +1,5 @@
 /* Importing Google Fonts for typography */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Open+Sans&display=swap');
 
 /* Resetting default margin, padding, and box-sizing for all elements */
 * {
@@ -30,10 +30,10 @@ p, li {
 
 .logo-small > p {
   background: #67D7CC;
-background: linear-gradient(to right, #67D7CC 0%, #5289ac 100%);
-background-clip: padding-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #67D7CC 0%, #5289ac 100%);
+  background-clip: padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 1.25rem; /* Adjusted font size for the logo text */
 }
 
@@ -76,7 +76,11 @@ background-clip: padding-box;
 
 .navbar ul li a:hover {
   text-decoration: none;
-  color: #06e0d0; /* Changing link color on hover in the navigation menu */
+  background: #67D7CC;
+  background: linear-gradient(to right, #67D7CC 0%, #5289ac 100%);
+  background-clip: padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Styling for hero content container */
