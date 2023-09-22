@@ -3,12 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  line-height: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 /* General styling that is applicable to the entire page*/
 
 /* Styling for header */
 
 /* Styling for Our Story section */
-
 .our-story {
   display: flex;
   width: 1000px;
@@ -47,14 +54,36 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
+}
+.button {
+  font-size: 12px;
   margin-left: 10px;
   border: 1px solid #06e0d0;
   background-color: transparent;
   text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #45ca4a; /* Green */
+  color: white;
 }
 
 /* Styling for video section */
+.skyline {
+  display: flex;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+}
+
+h3 {
+  color: white;
+}
 
 /* Styling for expertise section */
 
