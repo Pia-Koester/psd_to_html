@@ -65,4 +65,37 @@
 /* Styling for the footer section */
 #footer {
   background-image: url("./resources/bgk-footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem;
 }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+
+.contact-container p {
+  padding-left: 0.75rem;
+}
+
+.footer-nav {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
