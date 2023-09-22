@@ -63,3 +63,6 @@
 /* Styling for contact section */
 
 /* Styling for the footer section */
+#footer {
+  background-image: url("./resources/bgk-footer.png");
+}
