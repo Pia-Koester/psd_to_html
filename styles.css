@@ -30,7 +30,7 @@ p, li {
 
 .logo-small > p {
   background: #67D7CC;
-  background: linear-gradient(to right, #67D7CC 0%, #5289ac 100%);
+  background: linear-gradient(to right, #67D7CC 0%, #5289ac 90%);
   background-clip: padding-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
