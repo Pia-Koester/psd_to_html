@@ -99,3 +99,29 @@
   gap: 1rem;
 }
 
+.subscribe {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1rem 0;
+}
+
+.subscribe input{
+ background-color: transparent;
+ border: solid 1px grey;
+ padding: 0.6rem;
+}
+
+.subscribe img{
+ background-color: rgba(128, 128, 128, 0.35);
+ padding: 0.25rem 1rem;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.socialmedia img {
+  width: 11%;
+}
