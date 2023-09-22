@@ -161,12 +161,7 @@ p, li {
   text-transform: uppercase;
 }
 
-.button:hover {
-  color: #393663;
-  border: none;
-  background: rgb(6,224,208);
-background: radial-gradient(circle, rgba(6,224,208,1) 3%, rgba(57,54,99,1) 83%);
-}
+
 /* Styling for video section */
 
 /* Styling for expertise section */
@@ -181,6 +176,7 @@ background: radial-gradient(circle, rgba(6,224,208,1) 3%, rgba(57,54,99,1) 83%);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3rem;
+  color: white;
 }
 
 .footer-grid {
