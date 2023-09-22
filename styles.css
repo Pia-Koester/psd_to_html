@@ -42,7 +42,7 @@ p, li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/psd_to_html/resources/bgk-header.png"); /* Background image for the hero section */
+  background-image: url("./resources/bgk-header.png"); /* Background image for the hero section */
   background-repeat: no-repeat;
   background-size: cover;
 }
