@@ -18,7 +18,7 @@ table {
 /* Styling for Our Story section */
 .our-story {
   display: flex;
-  max-width: 1000px;
+  max-width: 62.5rem;
   margin: auto;
   border: none;
   padding-top: 12%;
@@ -28,9 +28,6 @@ table {
 .logo {
   flex: 1;
   display: flex;
-  margin-left: 25px;
-  margin-top: 25px;
-  width: 15%;
 }
 
 .text {
@@ -41,6 +38,7 @@ table {
 
 .text > p {
   margin: 10px;
+  font-size: 1rem;
 }
 
 .text h1 {
@@ -50,12 +48,12 @@ table {
 .button {
   border: none;
   color: #06e0d0;
-  padding: 15px 32px;
+  padding: 0.9rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
-  margin-left: 10px;
+  font-size: 1rem;
+  margin-left: 1rem;
   border: 1px solid #06e0d0;
   background-color: transparent;
   text-transform: uppercase;
@@ -78,6 +76,7 @@ table {
   background-size: cover;
   padding: 20%;
   margin-top: 5%;
+  cursor: pointer;
 }
 
 .video-text {
