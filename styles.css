@@ -309,15 +309,15 @@ body,
 h2,
 form {
   margin-top: 1rem;
-  padding: 0;
+  padding-left: 2%;
   display: grid;
   gap: 10px;
+  justify-content: flex-start;
 }
 
-form {
-  max-width: 600px;
+form h2 {
+  max-width: 50%;
   margin: 0 auto;
-  border-radius: 10px;
   padding: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -380,6 +380,11 @@ button:hover {
   flex-direction: column;
 }
 
+.list-right h2 {
+  text-align: left;
+  padding-left: 23%;
+}
+
 .logo-container {
   display: flex;
 }
@@ -393,7 +398,7 @@ button:hover {
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem;
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 .logo-right {
@@ -401,8 +406,8 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 1rem;
-  row-gap: 2rem;
+  padding: 1.5rem;
+  row-gap: 3rem;
 }
 /* Styling for the footer section */
 #footer {
