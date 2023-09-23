@@ -15,12 +15,9 @@ li {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
-
-/* Styling for the small logo */
-.logo-small {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem;
+/* Styling for header */
+.logo {
+  color: #06e0d0;
 }
 
 .logo-small > p {
