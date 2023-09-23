@@ -134,12 +134,12 @@ li {
 }
 
 .text > p {
-  margin: 10px;
+  margin: 15px;
   font-size: 1rem;
 }
 
 .text h1 {
-  margin: 10px;
+  margin: 15px;
 }
 
 .button {
@@ -163,7 +163,7 @@ li {
   color: white;
 }
 
-.button:hover {
+/* .button:hover {
   color: #393663;
   border: none;
   background: rgb(6, 224, 208);
@@ -172,14 +172,15 @@ li {
     rgba(6, 224, 208, 1) 3%,
     rgba(57, 54, 99, 1) 83%
   );
-}
+} */
+
 /* Styling for video section */
 .skyline {
   display: flex;
   background-repeat: no-repeat;
   flex-direction: column;
   align-items: center;
-  background-image: url("resources/bgk-middle.png");
+  background-image: url("resources/bgk-middle.png"); /* Background image for the our-story section */
   background-size: cover;
   padding: 20%;
   margin-top: 5%;
@@ -194,6 +195,56 @@ li {
 /* Styling for expertise section */
 
 /* Styling for Our Team section */
+.our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./resources/bgk-header.png"); /* Background image for the our-team section */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10%;
+  text-align: center;
+}
+
+.our-team h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 2.75rem; /* Adjusted font size for the our-team section */
+  padding: 7rem 0 1.5rem 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.our-team hr {
+  border-color: #06e0d0;
+  width: 6%;
+  text-align: center;
+}
+
+.our-team p {
+  max-width: 700px;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.team-container {
+  display: flex;
+  border: 1rem solid blue;
+}
+
+.card-container {
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 3%;
+  max-width: 800%;
+  border: 1px solid white;
+}
+
+.join-us {
+  display: flex;
+  justify-content: center;
+}
 
 /* Styling for contact section */
 
