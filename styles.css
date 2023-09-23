@@ -234,8 +234,8 @@ li {
 }
 
 .card-container img {
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   row-gap: 1%;
   max-width: 800%;
   border: 1px solid white;
