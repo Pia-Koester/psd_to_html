@@ -225,7 +225,7 @@ li {
     4,
     minmax(0, 1fr)
   ); /*with the repeat i creat 4 columns with equal size */
-  row-gap: 1rem; /*this is the distance between each card */
+  gap: 1rem; /*this is the distance between each card */
   margin: 2rem 5rem; /*this is the margin to the surrounding elements */
 }
 
@@ -235,7 +235,7 @@ li {
   color: white;
   display: flex;
   flex-direction: column;
-  row-gap: 1rem; /*this creates a gap betwenn the image and between the two text rows*/
+  gap: 1rem; /*this creates a gap betwenn the image and between the two text rows*/
 }
 
 .card-container img {
