@@ -1,5 +1,5 @@
 /* Importing Google Fonts for typography */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&family=Open+Sans:wght@300;700;800&display=swap');
 
 /* Resetting default margin, padding, and box-sizing for all elements */
 * {
@@ -7,12 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* General styling that is applicable to the entire page */
+/* General styling that is applicable to the entire page*/
 
 /* Styling for paragraphs and list items */
-p, li {
-  font-family: 'Open Sans', sans-serif;
+p,
+li {
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Styling for the small logo */
@@ -23,15 +23,14 @@ p, li {
 }
 
 .logo-small > p {
-  background: #67D7CC;
-  background: linear-gradient(to right, #67D7CC 0%, #5289ac 60%);
+  background: #67d7cc;
+  background: linear-gradient(to right, #67d7cc 0%, #5289ac 60%);
   background-clip: padding-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.75rem; /* Adjusted font size for the logo text */
   margin-left: 0.75rem;
 }
-
 
 /* Styling for the header navigation menu */
 .navbar {
@@ -60,14 +59,15 @@ p, li {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #FFFFFF; /* Setting the default link color in the navigation menu */
+  color: #ffffff; /* Setting the default link color in the navigation menu */
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .navbar ul li a:hover {
   text-decoration: none;
-  background: #67D7CC;
-  background: linear-gradient(to right, #67D7CC 0%, #5289ac 100%);
+  background: #67d7cc;
+  background: linear-gradient(to right, #67d7cc 0%, #5289ac 100%);
   background-clip: padding-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -85,13 +85,13 @@ p, li {
 
 /* Styling for the hero content */
 .hero-content h1 {
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   font-size: 2.75rem; /* Adjusted font size for the hero heading */
+  font-weight: 500;
   padding: 7rem 0 1.5rem 0;
   text-align: center;
-  color: #FFFFFF; 
+  color: #ffffff;
 }
-
 
 /* Styling for hero content container */
 .hero-content {
@@ -105,7 +105,7 @@ p, li {
   margin-top: 2.5rem;
   margin-bottom: 4rem;
   text-align: center;
-  color: #FFFFFF; /* Setting the text color for hero content */
+  color: #ffffff; /* Setting the text color for hero content */
 }
 
 .hero-content hr {
@@ -115,10 +115,9 @@ p, li {
 }
 
 /* Styling for Our Story section */
-
 .our-story {
   display: flex;
-  width: 1000px; /*change this! - we don't want to give it a fixed width with px*/
+  max-width: 70%;
   margin: auto;
   border: none;
   padding-top: 12%;
@@ -128,19 +127,16 @@ p, li {
 .logo {
   flex: 1;
   display: flex;
-  margin-left: 25px;
-  margin-top: 25px;
-  width: 15%;
 }
 
 .text {
   flex: 2;
   width: 70%;
-  display: inline-block;
 }
 
 .text > p {
   margin: 10px;
+  font-size: 1rem;
 }
 
 .text h1 {
@@ -148,23 +144,104 @@ p, li {
 }
 
 .button {
-  /* border: none; --> this has to be removed,  */ 
   color: #06e0d0;
-  padding: 15px 32px;
+  padding: 0.9rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
-  margin-left: 10px;
+  font-size: 1rem;
+  margin-left: 1rem;
   border: 1px solid #06e0d0;
   background-color: transparent;
   text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #45ca4a; /* Green */
+  color: white;
+}
+
+/* Styling for video section */
+.skyline {
+  display: flex;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("resources/bgk-middle.png");
+  background-size: cover;
+  padding: 20%;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.video-text {
+  color: white;
+  margin-top: 2%;
+}
+
+/* Styling for expertise section */
+.expertise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expertise h2 {
+  padding-top: 2rem;
+}
+
+.byline {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+}
+
+.expertise > p{
+  margin: 1rem ;
+}
+
+.card-bold {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.expertise hr {
+  width: 6%;
 }
 
 
-/* Styling for video section */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* gap: 2rem; */
+  padding: 3rem 0;
+}
 
-/* Styling for expertise section */
+.e-card {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 1.75rem;
+}
+ 
+.e-card h3{
+  margin: 1rem 0;
+}
+
+.down {
+  border-top: solid 1px rgba(157, 156, 156, 0.679);
+}
+
+.middle {
+  border-left: solid 1px rgba(157, 156, 156, 0.679);
+  border-right: solid 1px rgba(157, 156, 156, 0.679);
+}
+
+.e-card p {
+  max-width: 17rem;
+  text-align: center;
+}
 
 /* Styling for Our Team section */
 
@@ -193,6 +270,12 @@ p, li {
 
 .contact-container p {
   padding-left: 0.75rem;
+}
+
+.footer-item h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .footer-nav {
