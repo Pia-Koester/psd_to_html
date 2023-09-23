@@ -242,6 +242,66 @@ li {
 }
 
 /* Styling for Our Team section */
+.our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./resources/bgk-header.png"); /* Background image for the our-team section */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10%;
+  text-align: center;
+}
+
+.our-team h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 2.75rem; /* Adjusted font size for the our-team section */
+  padding: 3rem 0 0.5rem 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.our-team hr {
+  border-color: #06e0d0;
+  width: 6%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.our-team p {
+  max-width: 700px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* here I create a grid of the images - I make it have 4 colums and tell it to be max 1fr wide */
+.team-container-grid {
+  display: grid; /*selecting grid instead of flex */
+  grid-template-columns: repeat(
+    4,
+    minmax(0, 1fr)
+  ); /*with the repeat i creat 4 columns with equal size */
+  gap: 1rem; /*this is the distance between each card */
+  margin: 2rem 5rem; /*this is the margin to the surrounding elements */
+}
+
+/*the card themselves are flexboxes containing the image and two paragraphs */
+.card-container {
+  border: solid 1px grey;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /*this creates a gap betwenn the image and between the two text rows*/
+}
+
+.card-container img {
+  width: 100%; /*this makes sure the image is not bigger then the card it is in */
+  object-fit: cover; /* this makes sure the image fills the whole space in the card */
+  height: 15rem; /*this makes sure the images all have the same height */
+}
+
 
 /* Styling for contact section */
 
