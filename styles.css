@@ -163,7 +163,6 @@ li {
   color: white;
 }
 
-
 /* Styling for video section */
 .skyline {
   display: flex;
@@ -211,22 +210,25 @@ li {
   margin-bottom: 5%;
 }
 
-/* .our-team p {
+.our-team p {
   max-width: 700px;
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
   color: #ffffff;
-} */
+}
 
 /* here I create a grid of the images - I make it have 4 colums and tell it to be max 1fr wide */
 .team-container-grid {
   display: grid; /*selecting grid instead of flex */
-  grid-template-columns: repeat(4, minmax(0, 1fr)); /*with the repeat i creat 4 columns with equal size */
+  grid-template-columns: repeat(
+    4,
+    minmax(0, 1fr)
+  ); /*with the repeat i creat 4 columns with equal size */
   gap: 1rem; /*this is the distance between each card */
   margin: 2rem 5rem; /*this is the margin to the surrounding elements */
 }
- /*the card themselves are flexboxes containing the image and two paragraphs */
+/*the card themselves are flexboxes containing the image and two paragraphs */
 .card-container {
   border: solid 1px grey;
   color: white;
