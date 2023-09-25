@@ -344,7 +344,7 @@ max-width: 60%;
   display: flex;
   gap: 1rem;
   flex-direction: column;
-  min-width: 50%; 
+  min-width: 80%; 
 }
 
 input[type="text"],
@@ -369,12 +369,14 @@ textarea {
 .logo-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap:1.6rem;
   margin-top: 2rem;
+  /* place-items: center; */
 }
 
 .logo-container img {
   width: 60%;
+  object-fit: cover; /* this makes sure the image fills the whole space in the card */
 }
 
 /* .logo-left {
