@@ -1,5 +1,6 @@
 /* Importing Google Fonts for typography */
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&family=Open+Sans:wght@300;700;800&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&family=Open+Sans:wght@300;600;700;800&display=swap');
+
 
 /* Resetting default margin, padding, and box-sizing for all elements */
 * {
@@ -8,6 +9,35 @@
   box-sizing: border-box;
 }
 /* General styling that is applicable to the entire page*/
+
+.button {
+  color: #06e0d0;
+  padding: 0.9rem .9rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: 1rem;
+  border: 1px solid #06e0d0;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 2.5px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #67d7cc;
+  background: linear-gradient(to right, #67d7cc 0%, #5289ac 60%);
+  color: #393663;
+}
+
+hr {
+  width: 3.5%;
+  text-align: center;
+  border-color: #B4B4B3;
+}
 
 /* Styling for paragraphs and list items */
 p,
@@ -35,10 +65,11 @@ li {
 /* Styling for the header navigation menu */
 .navbar {
   width: 100vw;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-around;
   background-color: transparent;
+  margin-top: .5rem;
 }
 
 .navbar .logo {
@@ -49,6 +80,7 @@ li {
   display: flex;
   width: 45%;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .navbar ul li {
@@ -81,6 +113,8 @@ li {
   background-image: url("./resources/bgk-header.png"); /* Background image for the hero section */
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 15% 0;
+  text-align: center;
 }
 
 /* Styling for the hero content */
@@ -88,30 +122,24 @@ li {
   font-family: "EB Garamond", serif;
   font-size: 2.75rem; /* Adjusted font size for the hero heading */
   font-weight: 500;
-  padding: 7rem 0 1.5rem 0;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 1.125rem;
 }
 
-/* Styling for hero content container */
-.hero-content {
-  padding-bottom: 20%;
-  text-align: center;
-}
 
 /* Styling for hero content text */
 .hero-content p {
-  max-width: 850px;
-  margin-top: 2.5rem;
+  max-width: 60%;
+  margin-top: 1.125rem;
   margin-bottom: 4rem;
   text-align: center;
   color: #ffffff; /* Setting the text color for hero content */
+  text-wrap: balance;
 }
 
 .hero-content hr {
   border-color: #06e0d0;
-  width: 6%;
-  text-align: center;
 }
 
 /* Styling for Our Story section */
@@ -141,26 +169,6 @@ li {
 
 .text h1 {
   margin: 10px;
-}
-
-.button {
-  color: #06e0d0;
-  padding: 0.9rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;
-  margin-left: 1rem;
-  border: 1px solid #06e0d0;
-  background-color: transparent;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-
-.button:hover {
-  background-color: #45ca4a; /* Green */
-  color: white;
 }
 
 /* Styling for video section */
@@ -204,10 +212,6 @@ li {
 .card-bold {
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.expertise hr {
-  width: 6%;
 }
 
 .expertise-grid {
@@ -262,13 +266,6 @@ li {
   color: #ffffff;
   font-weight: 1.125rem;
   line-height: 1;
-}
-
-.our-team hr {
-  border-color: #06e0d0;
-  width: 6%;
-  text-align: center;
-  margin-bottom: 5%;
 }
 
 .our-team p {
