@@ -157,7 +157,7 @@ li {
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 3rem 0; 
+  padding: 4rem 0; 
   /* padding-left: 5%;  */
 }
 
@@ -205,7 +205,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 3rem; 
+  padding-top: 4rem; 
 }
 
 /* .expertise h2 {
@@ -266,28 +266,21 @@ li {
   background-image: url("./resources/bgk-header.png"); /* Background image for the our-team section */
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 10%;
+  padding-bottom: 4rem;
+  padding-top: 4rem; 
   text-align: center;
 }
 
-/* .our-team h2 {
-  font-family: "EB Garamond", serif;
-  font-size: 2.75rem; /* Adjusted font size for the our-team section 
-  padding: 3rem 0 0.5rem 0;
+.our-team h2 {
   text-align: center;
   color: #ffffff;
-  font-weight: 1.125rem;
-  line-height: 1;
-} */
+} 
 
 .our-team p {
   max-width: 700px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   text-align: center;
   color: #ffffff;
-  line-height: 1;
-}
+} 
 
 /* here I create a grid of the images - I make it have 4 colums and tell it to be max 1fr wide */
 .team-container-grid {
@@ -297,7 +290,8 @@ li {
     minmax(0, 1fr)
   ); /*with the repeat i creat 4 columns with equal size */
   gap: 1rem; /*this is the distance between each card */
-  margin: 2rem 5rem; /*this is the margin to the surrounding elements */
+  margin: 4rem 15rem; /*this is the margin to the surrounding elements */
+max-width: 60%;
 }
 
 /*the card themselves are flexboxes containing the image and two paragraphs */
@@ -312,7 +306,22 @@ li {
 .card-container img {
   width: 100%; /*this makes sure the image is not bigger then the card it is in */
   object-fit: cover; /* this makes sure the image fills the whole space in the card */
-  height: 20rem; /*this makes sure the images all have the same height */
+  height: 14rem; /*this makes sure the images all have the same height */
+}
+
+.namecollection {
+  margin-bottom: 1rem;
+}
+
+.namecollection p {
+  margin-bottom: 0.5rem;
+}
+
+.team-name {
+  font-weight: 600;
+}
+.dream-paragraph {
+  margin-bottom: 1.5rem;
 }
 
 /* Styling for contact section */
