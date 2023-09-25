@@ -260,6 +260,8 @@ li {
   padding: 3rem 0 0.5rem 0;
   text-align: center;
   color: #ffffff;
+  font-weight: 1.125rem;
+  line-height: 1;
 }
 
 .our-team hr {
@@ -275,6 +277,7 @@ li {
   margin-bottom: 1rem;
   text-align: center;
   color: #ffffff;
+  line-height: 1;
 }
 
 /* here I create a grid of the images - I make it have 4 colums and tell it to be max 1fr wide */
@@ -300,19 +303,17 @@ li {
 .card-container img {
   width: 100%; /*this makes sure the image is not bigger then the card it is in */
   object-fit: cover; /* this makes sure the image fills the whole space in the card */
-  height: 15rem; /*this makes sure the images all have the same height */
+  height: 20rem; /*this makes sure the images all have the same height */
 }
 
 /* Styling for contact section */
 
-body,
-h2,
 form {
   margin-top: 1rem;
   padding-left: 2%;
-  display: grid;
-  gap: 10px;
-  justify-content: flex-start;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 form h2 {
@@ -323,10 +324,11 @@ form h2 {
 }
 
 h2 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
   color: rgb(0, 0, 0);
   font-family: "EB Garamond", serif;
+  padding-left: 0.5rem;
 }
 
 label {
@@ -344,31 +346,14 @@ textarea {
   resize: none;
 }
 
-button {
-  /* border: none; --> this has to be removed,  */
-  color: #06e0d0;
-  padding: 0.9rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;
-  /* margin-left: 1rem; */
-  margin-right: 22rem;
-  border: 1px solid #06e0d0;
-  background-color: transparent;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-
-button:hover {
-  background-color: #45ca4a; /* Green */
-  color: white;
+.contact button {
+  margin-right: 25rem;
+  margin-left: 0;
+  padding-left: 1rem;
 }
 
 .contact {
   display: flex;
-  /* width: 10%; */
   object-fit: cover;
   background-size: cover;
   margin: 10%;
@@ -396,18 +381,18 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 1rem;
-  row-gap: 3rem;
+  justify-content: space-between;
+  padding: 1.125rem;
+  gap: 3rem;
 }
 
 .logo-right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 1.5rem;
-  row-gap: 3rem;
+  justify-content: space-between;
+  padding: 1.125rem;
+  gap: 3.2rem;
 }
 /* Styling for the footer section */
 #footer {
