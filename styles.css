@@ -17,7 +17,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   border: 1px solid #06e0d0;
   background-color: transparent;
   text-transform: uppercase;
@@ -39,11 +39,21 @@ hr {
   border-color: #B4B4B3;
 }
 
+h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #424242;
+}
+
 /* Styling for paragraphs and list items */
 p,
 li {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+  color: #424242;
+  letter-spacing: 0.05em;
 }
 /* Styling for header */
 .logo-small {
@@ -64,9 +74,9 @@ li {
 
 /* Styling for the header navigation menu */
 .navbar {
-  width: 100vw;
   position: absolute;
   display: flex;
+  width: 100vw;
   justify-content: space-around;
   background-color: transparent;
   margin-top: .5rem;
@@ -78,7 +88,7 @@ li {
 
 .navbar ul {
   display: flex;
-  width: 45%;
+  /* width: 45%; */
   justify-content: space-evenly;
   align-items: center;
 }
@@ -86,7 +96,7 @@ li {
 .navbar ul li {
   list-style: none;
   padding: 0.5rem;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .navbar ul li a {
@@ -135,7 +145,6 @@ li {
   margin-bottom: 4rem;
   text-align: center;
   color: #ffffff; /* Setting the text color for hero content */
-  text-wrap: balance;
 }
 
 .hero-content hr {
@@ -145,31 +154,34 @@ li {
 /* Styling for Our Story section */
 .our-story {
   display: flex;
-  max-width: 70%;
+  align-items: center;
+  justify-content: center;
   margin: auto;
-  border: none;
-  padding-top: 12%;
-  padding-left: 5%;
+  padding: 3rem 0; 
+  /* padding-left: 5%;  */
 }
 
-.logo {
-  flex: 1;
+.our-story-center {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5rem;
+  max-width: 70%;
 }
 
-.text {
-  flex: 2;
-  width: 70%;
-}
+/* .logo {
+  display: flex;
+} */
 
-.text > p {
-  margin: 10px;
-  font-size: 1rem;
-}
+ .our-story-text {
+  max-width: 50%;
+} 
 
-.text h1 {
-  margin: 10px;
-}
+.our-story-text > p {
+  margin: 1.5rem 0;
+
+} 
+
 
 /* Styling for video section */
 .skyline {
@@ -179,8 +191,7 @@ li {
   align-items: center;
   background-image: url("resources/bgk-middle.png");
   background-size: cover;
-  padding: 20%;
-  margin-top: 5%;
+  padding: 12%;
   cursor: pointer;
 }
 
@@ -194,31 +205,32 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 3rem; 
 }
 
-.expertise h2 {
+/* .expertise h2 {
   padding-top: 2rem;
-}
+} */
 
 .byline {
   font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
   font-weight: 400;
-}
-
-.expertise > p {
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-bold {
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem;
 }
 
 .expertise-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* gap: 2rem; */
-  padding: 3rem 0;
+  padding: 4.5rem 0; 
 }
 
 .e-card {
@@ -258,15 +270,15 @@ li {
   text-align: center;
 }
 
-.our-team h2 {
+/* .our-team h2 {
   font-family: "EB Garamond", serif;
-  font-size: 2.75rem; /* Adjusted font size for the our-team section */
+  font-size: 2.75rem; /* Adjusted font size for the our-team section 
   padding: 3rem 0 0.5rem 0;
   text-align: center;
   color: #ffffff;
   font-weight: 1.125rem;
   line-height: 1;
-}
+} */
 
 .our-team p {
   max-width: 700px;
@@ -313,12 +325,12 @@ form {
   flex-direction: column;
 }
 
-form h2 {
+/* form h2 {
   max-width: 50%;
   margin: 0 auto;
   padding: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} 
 
 h2 {
   text-align: left;
@@ -326,7 +338,7 @@ h2 {
   color: rgb(0, 0, 0);
   font-family: "EB Garamond", serif;
   padding-left: 0.5rem;
-}
+}*/
 
 label {
   font-family: "EB Garamond", serif;
@@ -362,10 +374,10 @@ textarea {
   flex-direction: column;
 }
 
-.list-right h2 {
+/* .list-right h2 {
   text-align: left;
   padding-left: 23%;
-}
+} */
 
 .logo-container {
   display: flex;
