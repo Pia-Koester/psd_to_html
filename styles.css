@@ -332,22 +332,8 @@ form {
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  min-width: 50%;
 }
-
-/* form h2 {
-  max-width: 50%;
-  margin: 0 auto;
-  padding: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} 
-
-h2 {
-  text-align: left;
-  margin-bottom: 20px;
-  color: rgb(0, 0, 0);
-  font-family: "EB Garamond", serif;
-  padding-left: 0.5rem;
-}*/
 
 label {
   font-family: "EB Garamond", serif;
@@ -364,11 +350,9 @@ textarea {
   resize: none;
 }
 
-.contact button {
-  margin-right: 25rem;
-  margin-left: 0;
-  padding-left: 1rem;
-}
+ .contact button {
+ width: 50%;
+} 
 
 .contact {
   display: flex;
