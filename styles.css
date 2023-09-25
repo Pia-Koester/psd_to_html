@@ -1,5 +1,5 @@
 /* Importing Google Fonts for typography */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&family=Open+Sans:wght@300;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&family=Open+Sans:wght@300;700;800&display=swap");
 
 /* Resetting default margin, padding, and box-sizing for all elements */
 * {
@@ -197,8 +197,8 @@ li {
   font-weight: 400;
 }
 
-.expertise > p{
-  margin: 1rem ;
+.expertise > p {
+  margin: 1rem;
 }
 
 .card-bold {
@@ -210,7 +210,6 @@ li {
   width: 6%;
 }
 
-
 .expertise-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -219,13 +218,13 @@ li {
 }
 
 .e-card {
- display: flex;
- flex-direction: column;
- align-items: center;
- padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.75rem;
 }
- 
-.e-card h3{
+
+.e-card h3 {
   margin: 1rem 0;
 }
 
@@ -261,6 +260,8 @@ li {
   padding: 3rem 0 0.5rem 0;
   text-align: center;
   color: #ffffff;
+  font-weight: 1.125rem;
+  line-height: 1;
 }
 
 .our-team hr {
@@ -276,6 +277,7 @@ li {
   margin-bottom: 1rem;
   text-align: center;
   color: #ffffff;
+  line-height: 1;
 }
 
 /* here I create a grid of the images - I make it have 4 colums and tell it to be max 1fr wide */
@@ -301,12 +303,97 @@ li {
 .card-container img {
   width: 100%; /*this makes sure the image is not bigger then the card it is in */
   object-fit: cover; /* this makes sure the image fills the whole space in the card */
-  height: 15rem; /*this makes sure the images all have the same height */
+  height: 20rem; /*this makes sure the images all have the same height */
 }
-
 
 /* Styling for contact section */
 
+form {
+  margin-top: 1rem;
+  padding-left: 2%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+form h2 {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  font-family: "EB Garamond", serif;
+  padding-left: 0.5rem;
+}
+
+label {
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  max-width: 800%;
+  padding: 1rem;
+  border: 1px solid #06e0d0;
+  resize: none;
+}
+
+.contact button {
+  margin-right: 25rem;
+  margin-left: 0;
+  padding-left: 1rem;
+}
+
+.contact {
+  display: flex;
+  object-fit: cover;
+  background-size: cover;
+  margin: 10%;
+  justify-content: center;
+}
+
+.list-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-right h2 {
+  text-align: left;
+  padding-left: 23%;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo-left img {
+  max-width: 40%;
+}
+.logo-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.125rem;
+  gap: 3rem;
+}
+
+.logo-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.125rem;
+  gap: 3.2rem;
+}
 /* Styling for the footer section */
 #footer {
   background-image: url("./resources/bgk-footer.png");
@@ -359,19 +446,19 @@ li {
   margin: 1rem 0;
 }
 
-.subscribe input{
- background-color: transparent;
- border: solid 1px grey;
- padding: 0.6rem 1.25rem;
+.subscribe input {
+  background-color: transparent;
+  border: solid 1px grey;
+  padding: 0.6rem 1.25rem;
 }
 
-.subscribe img{
- background-color: rgba(128, 128, 128, 0.35);
- padding: 0.25rem 1rem;
- border: solid 1px rgba(128, 128, 128, 0.35);
+.subscribe img {
+  background-color: rgba(128, 128, 128, 0.35);
+  padding: 0.25rem 1rem;
+  border: solid 1px rgba(128, 128, 128, 0.35);
 }
 
 .socialmedia img {
   width: 11%;
   margin: 0 0.5rem 0 0;
-} 
+}
