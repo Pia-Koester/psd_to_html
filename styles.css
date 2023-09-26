@@ -330,11 +330,9 @@ max-width: 60%;
   display: flex;
   justify-content: center;
   align-items: baseline;
-<<<<<<< HEAD
-  margin: 3rem 10rem;
-=======
+
   padding: 2rem;
->>>>>>> feature/optimization
+
 } 
 
 .form-container {
@@ -368,10 +366,8 @@ textarea {
 .list-right {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   padding: 4rem;
   max-width: 50%;
-
 }
 
 .logo-container {
@@ -380,14 +376,6 @@ textarea {
   row-gap:1.6rem; 
   margin-top: 2rem;
   /* place-items: center; */
-=======
-  gap: 2rem;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: space-between;
->>>>>>> feature/optimization
 }
 
 .logo-container img {
@@ -396,26 +384,6 @@ textarea {
   height: 80px;
 } 
 
-/* .logo-left {
-  display: flex;
-  flex-direction: column;
-  align-items: space-between; 
-  justify-content: flex-start;
-  gap: 3.2rem;
-}
-
-
-.logo-left img {
-  max-width: 30%;
-} 
-
-.logo-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3.2rem; 
-}  */
 /* Styling for the footer section */
 #footer {
   background-image: url("./resources/bgk-footer.png");
