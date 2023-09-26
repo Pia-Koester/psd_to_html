@@ -488,18 +488,43 @@ textarea {
   }
 
   .team-container-grid {
-    display: grid; /*selecting grid instead of flex */
-    grid-template-columns: 1fr; /*with the repeat i creat 4 columns with equal size */
-    gap: 1rem; /*this is the distance between each card */
-    margin: 2rem 5rem; /*this is the margin to the surrounding elements */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 5rem;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
   }
 
-  .contact-container {
+  .left {
+    grid-column-start: 1;
+    grid-column-end: 1;
     flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    color: white;
+    justify-self: flex-end;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    /* align-items: flex-start; */
   }
 
   .footer-nav {
