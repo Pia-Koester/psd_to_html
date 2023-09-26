@@ -31,6 +31,7 @@
   background: #67d7cc;
   background: linear-gradient(to right, #67d7cc 0%, #5289ac 60%);
   color: #393663;
+  border: none; 
 }
 
 hr {
@@ -337,10 +338,10 @@ max-width: 60%;
  flex-direction: column;
  min-width: 40%;
  padding: 2rem;
-}
+} 
 
 .form {
-   margin-top: 1rem;
+  margin-top: 1rem;
   padding-left: 2%; 
   display: flex;
   gap: 1rem;
@@ -353,11 +354,12 @@ input[type="email"],
 textarea {
   padding: 1rem;
   border: 1px solid #06e0d0;
+  resize: none;
 }
 
  .contact button {
- max-width: 50%;
-} 
+ max-width: 40%;
+}  
 
 .list-right {
   display: flex;
@@ -376,9 +378,10 @@ textarea {
 }
 
 .logo-container img {
-  width: 60%;
-  object-fit: cover; /* this makes sure the image fills the whole space in the card */
-}
+  width: 60%; 
+  object-fit: scale-down; /* this makes sure the image fills the whole space in the card */
+  height: 80px;
+} 
 
 /* .logo-left {
   display: flex;
