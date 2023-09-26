@@ -157,7 +157,6 @@ li {
   justify-content: center;
   margin: auto;
   padding: 4rem 0;
-  /* padding-left: 5%;  */
 }
 
 .our-story-center {
@@ -417,7 +416,9 @@ textarea {
   grid-column-start: 1;
   grid-column-end: 3;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .right {
@@ -466,12 +467,29 @@ textarea {
     display: none;
   }
 
+  .hero-content h1 {
+    margin-top: 2rem;
+    margin-bottom: 1.125rem 0;
+  }
+
+  hr {
+    width: 15%;
+  }
+
   .logo {
     display: none;
   }
+  .our-story-center {
+    max-width: 100%;
+  }
 
   .our-story-text {
-    max-width: 80%;
+    width: 100%;
+  }
+
+  .byline {
+    padding: 1rem 2rem;
+    text-align: center;
   }
 
   .expertise-grid {
@@ -507,6 +525,25 @@ textarea {
     margin: auto;
   }
 
+  .list-right {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .logo-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+    margin-top: 2rem;
+    justify-items: center;
+  }
+  
+  #imprint {
+    padding: 1.2rem 1.5rem; }
+
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -523,7 +560,7 @@ textarea {
     grid-column-start: 1;
     grid-column-end: 1;
     color: white;
-    justify-self: flex-end;
+    justify-self: flex-start;
   }
 
   .contact-container {
@@ -537,5 +574,10 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .socialmedia{
+  display: flex;
+  justify-content: space-between;
   }
 }
