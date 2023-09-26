@@ -1,6 +1,5 @@
 /* Importing Google Fonts for typography */
-  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&family=Open+Sans:wght@300;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&family=Open+Sans:wght@300;600;700;800&display=swap");
 
 /* Resetting default margin, padding, and box-sizing for all elements */
 * {
@@ -12,7 +11,7 @@
 
 .button {
   color: #06e0d0;
-  padding: 0.9rem .9rem;
+  padding: 0.9rem 0.9rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -31,13 +30,13 @@
   background: #67d7cc;
   background: linear-gradient(to right, #67d7cc 0%, #5289ac 60%);
   color: #393663;
-  border: none; 
+  border: none;
 }
 
 hr {
   width: 3.5%;
   text-align: center;
-  border-color: #B4B4B3;
+  border-color: #b4b4b3;
 }
 
 h2 {
@@ -80,7 +79,7 @@ li {
   width: 100vw;
   justify-content: space-around;
   background-color: transparent;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .navbar .logo {
@@ -138,7 +137,6 @@ li {
   margin-bottom: 1.125rem;
 }
 
-
 /* Styling for hero content text */
 .hero-content p {
   max-width: 60%;
@@ -158,7 +156,7 @@ li {
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding: 4rem 0; 
+  padding: 4rem 0;
   /* padding-left: 5%;  */
 }
 
@@ -174,15 +172,13 @@ li {
   display: flex;
 } */
 
- .our-story-text {
+.our-story-text {
   max-width: 50%;
-} 
+}
 
 .our-story-text > p {
   margin: 1.5rem 0;
-
-} 
-
+}
 
 /* Styling for video section */
 .skyline {
@@ -206,7 +202,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4rem; 
+  padding-top: 4rem;
 }
 
 /* .expertise h2 {
@@ -231,7 +227,7 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* gap: 2rem; */
-  padding: 4.5rem 0; 
+  padding: 4.5rem 0;
 }
 
 .e-card {
@@ -268,20 +264,20 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 4rem;
-  padding-top: 4rem; 
+  padding-top: 4rem;
   text-align: center;
 }
 
 .our-team h2 {
   text-align: center;
   color: #ffffff;
-} 
+}
 
 .our-team p {
   max-width: 700px;
   text-align: center;
   color: #ffffff;
-} 
+}
 
 /* here I create a grid of the images - I make it have 4 colums and tell it to be max 1fr wide */
 .team-container-grid {
@@ -292,7 +288,7 @@ li {
   ); /*with the repeat i creat 4 columns with equal size */
   gap: 1rem; /*this is the distance between each card */
   margin: 4rem 15rem; /*this is the margin to the surrounding elements */
-max-width: 60%;
+  max-width: 60%;
 }
 
 /*the card themselves are flexboxes containing the image and two paragraphs */
@@ -326,31 +322,27 @@ max-width: 60%;
 }
 
 /* Styling for contact section */
- .contact {
+.contact {
   display: flex;
   justify-content: center;
   align-items: baseline;
-<<<<<<< HEAD
-  margin: 3rem 10rem;
-=======
   padding: 2rem;
->>>>>>> feature/optimization
-} 
+}
 
 .form-container {
- display: flex;
- flex-direction: column;
- min-width: 40%;
- padding: 2rem;
-} 
+  display: flex;
+  flex-direction: column;
+  min-width: 40%;
+  padding: 2rem;
+}
 
 .form {
   margin-top: 1rem;
-  padding-left: 2%; 
+  padding-left: 2%;
   display: flex;
   gap: 1rem;
   flex-direction: column;
-  min-width: 80%; 
+  min-width: 80%;
 }
 
 input[type="text"],
@@ -361,40 +353,29 @@ textarea {
   resize: none;
 }
 
- .contact button {
- max-width: 40%;
-}  
+.contact button {
+  max-width: 40%;
+}
 
 .list-right {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   padding: 4rem;
   max-width: 50%;
-
 }
 
 .logo-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap:1.6rem; 
+  row-gap: 1.6rem;
   margin-top: 2rem;
-  /* place-items: center; */
-=======
-  gap: 2rem;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: space-between;
->>>>>>> feature/optimization
 }
 
 .logo-container img {
-  width: 60%; 
+  width: 60%;
   object-fit: scale-down; /* this makes sure the image fills the whole space in the card */
   height: 80px;
-} 
+}
 
 /* .logo-left {
   display: flex;
