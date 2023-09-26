@@ -466,3 +466,55 @@ width: 100%;
   width: 10%;
   margin: 2rem 0.5rem 0 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .navbar ul {
+    display: none;
+  }
+
+
+  .logo {
+    display: none;
+  }
+
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 3rem 0;
+  }
+
+  .down {
+    border-top: solid 1px rgba(157, 156, 156, 0.679);
+  }
+  
+  .middle {
+    border-top: solid 1px rgba(157, 156, 156, 0.679);
+    border-bottom: solid 1px rgba(157, 156, 156, 0.679); 
+    border-left: none;
+    border-right: none;
+  }
+
+  .team-container-grid {
+    display: grid; /*selecting grid instead of flex */
+    grid-template-columns: 1fr; /*with the repeat i creat 4 columns with equal size */
+    gap: 1rem; /*this is the distance between each card */
+    margin: 2rem 5rem; /*this is the margin to the surrounding elements */
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+   flex-direction: column;
+  }
+
+  .footer-nav {
+     grid-column-start: 1;
+  grid-column-end: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+}
