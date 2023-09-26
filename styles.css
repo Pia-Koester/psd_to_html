@@ -377,7 +377,7 @@ textarea {
 }
 
 /* Styling for the footer section */
-#footer {
+#imprint {
   background-image: url("./resources/bgk-footer.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -468,6 +468,10 @@ textarea {
 
   .logo {
     display: none;
+  }
+
+  .our-story-text {
+    max-width: 80%;
   }
 
   .expertise-grid {
