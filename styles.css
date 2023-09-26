@@ -1,5 +1,5 @@
 /* Importing Google Fonts for typography */
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&family=Open+Sans:wght@300;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&family=Open+Sans:wght@300;600;700;800&display=swap");
 
 /* Resetting default margin, padding, and box-sizing for all elements */
 * {
@@ -9,11 +9,51 @@
 }
 /* General styling that is applicable to the entire page*/
 
+.button {
+  color: #06e0d0;
+  padding: 0.9rem 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  /* margin-left: 1rem; */
+  border: 1px solid #06e0d0;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 2.5px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #67d7cc;
+  background: linear-gradient(to right, #67d7cc 0%, #5289ac 60%);
+  color: #393663;
+  border: none;
+}
+
+hr {
+  width: 3.5%;
+  text-align: center;
+  border-color: #b4b4b3;
+}
+
+h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #424242;
+}
+
 /* Styling for paragraphs and list items */
 p,
 li {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+  color: #424242;
+  letter-spacing: 0.05em;
 }
 /* Styling for header */
 .logo-small {
@@ -34,11 +74,12 @@ li {
 
 /* Styling for the header navigation menu */
 .navbar {
-  width: 100vw;
-  position: fixed;
+  position: absolute;
   display: flex;
+  width: 100vw;
   justify-content: space-around;
   background-color: transparent;
+  margin-top: 0.5rem;
 }
 
 .navbar .logo {
@@ -47,14 +88,15 @@ li {
 
 .navbar ul {
   display: flex;
-  width: 45%;
+  /* width: 45%; */
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .navbar ul li {
   list-style: none;
   padding: 0.5rem;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .navbar ul li a {
@@ -81,6 +123,8 @@ li {
   background-image: url("./resources/bgk-header.png"); /* Background image for the hero section */
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 15% 0;
+  text-align: center;
 }
 
 /* Styling for the hero content */
@@ -88,21 +132,15 @@ li {
   font-family: "EB Garamond", serif;
   font-size: 2.75rem; /* Adjusted font size for the hero heading */
   font-weight: 500;
-  padding: 7rem 0 1.5rem 0;
   text-align: center;
   color: #ffffff;
-}
-
-/* Styling for hero content container */
-.hero-content {
-  padding-bottom: 20%;
-  text-align: center;
+  margin-bottom: 1.125rem;
 }
 
 /* Styling for hero content text */
 .hero-content p {
-  max-width: 850px;
-  margin-top: 2.5rem;
+  max-width: 60%;
+  margin-top: 1.125rem;
   margin-bottom: 4rem;
   text-align: center;
   color: #ffffff; /* Setting the text color for hero content */
@@ -110,57 +148,32 @@ li {
 
 .hero-content hr {
   border-color: #06e0d0;
-  width: 6%;
-  text-align: center;
 }
 
 /* Styling for Our Story section */
 .our-story {
   display: flex;
-  max-width: 70%;
+  align-items: center;
+  justify-content: center;
   margin: auto;
-  border: none;
-  padding-top: 12%;
-  padding-left: 5%;
+  padding: 4rem 0;
+  /* padding-left: 5%;  */
 }
 
-.logo {
-  flex: 1;
+.our-story-center {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5rem;
+  max-width: 70%;
 }
 
-.text {
-  flex: 2;
-  width: 70%;
+.our-story-text {
+  max-width: 60%;
 }
 
-.text > p {
-  margin: 10px;
-  font-size: 1rem;
-}
-
-.text h1 {
-  margin: 10px;
-}
-
-.button {
-  color: #06e0d0;
-  padding: 0.9rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;
-  margin-left: 1rem;
-  border: 1px solid #06e0d0;
-  background-color: transparent;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-
-.button:hover {
-  background-color: #45ca4a; /* Green */
-  color: white;
+.our-story-text > p {
+  margin: 1.5rem 0;
 }
 
 /* Styling for video section */
@@ -171,8 +184,7 @@ li {
   align-items: center;
   background-image: url("resources/bgk-middle.png");
   background-size: cover;
-  padding: 20%;
-  margin-top: 5%;
+  padding: 15%;
   cursor: pointer;
 }
 
@@ -186,35 +198,32 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 4rem;
 }
 
-.expertise h2 {
+/* .expertise h2 {
   padding-top: 2rem;
-}
+} */
 
 .byline {
   font-family: "EB Garamond", serif;
+  font-size: 1.125rem;
   font-weight: 400;
-}
-
-.expertise > p {
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-bold {
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.expertise hr {
-  width: 6%;
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem;
 }
 
 .expertise-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* gap: 2rem; */
-  padding: 3rem 0;
+  padding: 4.5rem 0;
 }
 
 .e-card {
@@ -229,12 +238,12 @@ li {
 }
 
 .down {
-  border-top: solid 1px rgba(157, 156, 156, 0.679);
+  border-top: solid 0.5px #b4b4b3b3;
 }
 
 .middle {
-  border-left: solid 1px rgba(157, 156, 156, 0.679);
-  border-right: solid 1px rgba(157, 156, 156, 0.679);
+  border-left: solid 0.5px #b4b4b3b3;
+  border-right: solid 0.5px #b4b4b3b3;
 }
 
 .e-card p {
@@ -250,34 +259,20 @@ li {
   background-image: url("./resources/bgk-header.png"); /* Background image for the our-team section */
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 10%;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
   text-align: center;
 }
 
 .our-team h2 {
-  font-family: "EB Garamond", serif;
-  font-size: 2.75rem; /* Adjusted font size for the our-team section */
-  padding: 3rem 0 0.5rem 0;
   text-align: center;
   color: #ffffff;
-  font-weight: 1.125rem;
-  line-height: 1;
-}
-
-.our-team hr {
-  border-color: #06e0d0;
-  width: 6%;
-  text-align: center;
-  margin-bottom: 5%;
 }
 
 .our-team p {
   max-width: 700px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   text-align: center;
   color: #ffffff;
-  line-height: 1;
 }
 
 /* here I create a grid of the images - I make it have 4 colums and tell it to be max 1fr wide */
@@ -288,7 +283,8 @@ li {
     minmax(0, 1fr)
   ); /*with the repeat i creat 4 columns with equal size */
   gap: 1rem; /*this is the distance between each card */
-  margin: 2rem 5rem; /*this is the margin to the surrounding elements */
+  margin: 4rem 15rem; /*this is the margin to the surrounding elements */
+  max-width: 60%;
 }
 
 /*the card themselves are flexboxes containing the image and two paragraphs */
@@ -298,115 +294,105 @@ li {
   display: flex;
   flex-direction: column;
   gap: 1rem; /*this creates a gap betwenn the image and between the two text rows*/
+  border-radius: 2.5px;
 }
 
 .card-container img {
   width: 100%; /*this makes sure the image is not bigger then the card it is in */
   object-fit: cover; /* this makes sure the image fills the whole space in the card */
-  height: 20rem; /*this makes sure the images all have the same height */
+  height: 14rem; /*this makes sure the images all have the same height */
+}
+
+.namecollection {
+  margin-bottom: 1rem;
+}
+
+.namecollection p {
+  margin-bottom: 0.5rem;
+}
+
+.team-name {
+  font-weight: 600;
+}
+.dream-paragraph {
+  margin-bottom: 1.5rem;
 }
 
 /* Styling for contact section */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 2rem;
+}
 
-form {
+.form-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 40%;
+  padding: 2rem;
+}
+
+.form {
   margin-top: 1rem;
   padding-left: 2%;
   display: flex;
   gap: 1rem;
   flex-direction: column;
-}
-
-form h2 {
-  max-width: 50%;
-  margin: 0 auto;
-  padding: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: left;
-  margin-bottom: 20px;
-  color: rgb(0, 0, 0);
-  font-family: "EB Garamond", serif;
-  padding-left: 0.5rem;
-}
-
-label {
-  font-family: "EB Garamond", serif;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
+  min-width: 80%;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  max-width: 800%;
   padding: 1rem;
-  border: 1px solid #06e0d0;
+  border: 1px solid #b4b4b3;
   resize: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
 .contact button {
-  margin-right: 25rem;
-  margin-left: 0;
-  padding-left: 1rem;
-}
-
-.contact {
-  display: flex;
-  object-fit: cover;
-  background-size: cover;
-  margin: 10%;
-  justify-content: center;
+  max-width: 40%;
 }
 
 .list-right {
   display: flex;
   flex-direction: column;
-}
-
-.list-right h2 {
-  text-align: left;
-  padding-left: 23%;
+  padding: 4rem;
+  max-width: 50%;
 }
 
 .logo-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.6rem;
+  margin-top: 2rem;
 }
 
-.logo-left img {
-  max-width: 40%;
-}
-.logo-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.125rem;
-  gap: 3rem;
+.logo-container img {
+  width: 60%;
+  object-fit: scale-down; /* this makes sure the image fills the whole space in the card */
+  height: 62px;
 }
 
-.logo-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.125rem;
-  gap: 3.2rem;
-}
 /* Styling for the footer section */
 #footer {
   background-image: url("./resources/bgk-footer.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 3rem;
+  padding: 5rem 9rem;
   color: white;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
+}
+
+.footer-item p {
+  color: white;
 }
 
 .contact-container {
@@ -417,48 +403,135 @@ textarea {
 
 .contact-container p {
   padding-left: 0.75rem;
+  color: white;
 }
 
 .footer-item h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 1.5rem;
 }
 
-.footer-nav {
+.left {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 3;
   display: flex;
   justify-content: space-between;
 }
 
-.left {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
+.right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  color: white;
+  justify-self: flex-end;
+}
+
+.left p {
   text-transform: uppercase;
 }
 
 .subscribe {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 1rem 0;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .subscribe input {
   background-color: transparent;
   border: solid 1px grey;
-  padding: 0.6rem 1.25rem;
+  padding: 1rem 1.25rem;
+  margin-right: 0.5rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.subscribe input::placeholder {
+  color: white;
 }
 
 .subscribe img {
-  background-color: rgba(128, 128, 128, 0.35);
-  padding: 0.25rem 1rem;
-  border: solid 1px rgba(128, 128, 128, 0.35);
+  background-color: rgba(255, 251, 251, 0.3);
+  padding: 0.8rem 1.5rem;
 }
 
 .socialmedia img {
-  width: 11%;
-  margin: 0 0.5rem 0 0;
+  width: 10%;
+  margin: 2rem 0.5rem 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem 0;
+  }
+
+  .down {
+    border-top: solid 1px rgba(157, 156, 156, 0.679);
+  }
+
+  .middle {
+    border-top: solid 1px rgba(157, 156, 156, 0.679);
+    border-bottom: solid 1px rgba(157, 156, 156, 0.679);
+    border-left: none;
+    border-right: none;
+  }
+
+  .team-container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 5rem;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    color: white;
+    justify-self: flex-end;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    /* align-items: flex-start; */
+  }
+
+  .footer-nav {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

@@ -27,7 +27,6 @@
       <hr />
       <p>
         This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
-        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
         auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
         elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
         amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
@@ -38,27 +37,26 @@
     <main>
       <!--Our story section with the side logo-->
       <section class="our-story">
-        <div class="logo">
-          <img src="./resources/logo1.png" alt="" />
-        </div>
-
-        <div class="text">
-          <h1>Our Story</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            sint dicta culpa libero! Vero obcaecati eos sapiente iure
-            repudiandae earum aspernatur praesentium at aut, assumenda aliquam
-            similique! Deserunt voluptatum neque magnam ut est. Blanditiis
-            minima quaerat architecto non.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            sint dicta culpa libero! Vero obcaecati eos sapiente iure
-            repudiandae earum aspernatur praesentium at aut, assumenda aliquam
-            similique! Deserunt voluptatum neque magnam ut est. Blanditiis
-            minima quaerat architecto non.
-          </p>
-          <button class="button">learn more</button>
+        <div class="our-story-center">
+          <div class="logo">
+            <img src="./resources/logo1.png" alt="" />
+          </div>
+          <div class="our-story-text">
+            <h2>Our Story</h2>
+            <p>
+              This is Photoshop’s version of Lorem ipsum. Proin gravida nibh vel
+              velit auctor aliquet. Aenaen sollicitudum, lorem quis bibendum
+              auctor, nisi consequat ipsum, nec sagittis sem nibh id elit. Duis
+              sed odido sit amet nibh vulputate cursus
+            </p>
+            <p>
+              Morbi accumsan ipsum velit. Nam nec tellus a odido tincidunt
+              auctor a ornare odio. Sed non mauris vitae erat consequat auctor
+              eu in elit. Class aptent taciti sociosqu ad litora torquent per
+              conubia nostra, per inceptos himenaeos.
+            </p>
+            <button class="button">learn more</button>
+          </div>
         </div>
       </section>
       <section class="skyline">
@@ -108,40 +106,47 @@
       </section>
       <section class="our-team">
         <h2>MEET OUR AMAZING TEAM</h2>
-        <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+        <p class="byline">
+          Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        </p>
         <hr />
         <div class="team-container-grid">
           <div class="card-container">
             <img src="resources/pic3.jpg" alt="Photo of lady smiling" />
-            <p>SEMF UCUK</p>
-            <p>CEO & FOUNDER</p>
+            <div class="namecollection">
+              <p class="team-name">SEMF UCUK</p>
+              <p>CEO & FOUNDER</p>
+            </div>
           </div>
           <div class="card-container">
             <img src="resources/Amon2.jpg" alt="Guy smiling" />
-            <p>DIK ADALIN</p>
-            <p>ENGINEERING</p>
+            <div class="namecollection">
+              <p class="team-name">DIK ADALIN</p>
+              <p>ENGINEERING</p>
+            </div>
           </div>
           <div class="card-container">
             <img src="resources/pic4.jpg" alt="Photo of lady smiling" />
-            <p>JENG KOL</p>
-            <p>DESIGNER</p>
+            <div class="namecollection">
+              <p class="team-name">JENG KOL</p>
+              <p>DESIGNER</p>
+            </div>
           </div>
           <div class="card-container">
             <img src="resources/Anom1.jpeg" alt="Photo of man and woman" />
-            <p>PET & ROMAK</p>
-            <p>MARKETING</p>
+            <div class="namecollection">
+              <p class="team-name">PET & ROMAK</p>
+              <p>MARKETING</p>
+            </div>
           </div>
         </div>
-        <div>
-          <p>Become part of our dream, let's join us!</p>
-        </div>
+        <p class="dream-paragraph">Become part of our dream, let's join us!</p>
         <button class="button">WE ARE HIRING</button>
       </section>
-
       <section class="contact">
-        <div class="form">
+        <div class="form-container">
           <h2>GIVE US A GOOD NEWS</h2>
-          <form>
+          <form class="form">
             <label for="name"></label>
             <input
               type="text"
@@ -150,7 +155,6 @@
               placeholder="Name"
               required
             />
-
             <label for="email"></label>
             <input
               type="email"
@@ -177,34 +181,28 @@
               placeholder="Your Message"
               required
             ></textarea>
-
             <button class="button" type="submit">Submit</button>
           </form>
         </div>
         <div class="list-right">
           <h2>OUR HAPPY CLIENTS</h2>
-
           <div class="logo-container">
-            <div class="logo-left">
-              <img src="resources/Zara_Logo.png" alt="Zara logo" />
-              <img
-                src="resources/1280px-Barneys_New_York_Logo.png"
-                alt="Barneys logo"
-              />
-              <img
-                src="resources/Calvin_klein_logo.png"
-                alt="Calvin Klein logo"
-              />
-              <img src="resources/Converse_logo.png" alt="Converse logo" />
-              <img src="resources/1280px-Levi's_logo.png" alt=" Levis logo" />
-            </div>
-            <div class="logo-right">
-              <img src="resources/Logo_of_Mango_(new).png" alt="Mango logo" />
-              <img src="resources/1280px-Gucci_Logo.png" alt="Gucci logo" />
-              <img src="resources/1280px-Logo_NIKE.png" alt="Nike logo" />
-              <img src="resources/Puma_Logo.png" alt="Puma logo" />
-              <img src="resources/Billabong.png" alt=" Billabong logo" />
-            </div>
+            <img src="resources/Zara_Logo.png" alt="Zara logo" />
+            <img src="resources/Logo_of_Mango_(new).png" alt="Mango logo" />
+            <img
+              src="resources/1280px-Barneys_New_York_Logo.png"
+              alt="Barneys logo"
+            />
+            <img src="resources/1280px-Gucci_Logo.png" alt="Gucci logo" />
+            <img
+              src="resources/Calvin_klein_logo.png"
+              alt="Calvin Klein logo"
+            />
+            <img src="resources/1280px-Logo_NIKE.png" alt="Nike logo" />
+            <img src="resources/Converse_logo.png" alt="Converse logo" />
+            <img src="resources/Puma_Logo.png" alt="Puma logo" />
+            <img src="resources/1280px-Levi's_logo.png" alt=" Levis logo" />
+            <img src="resources/Billabong.png" alt=" Billabong logo" />
           </div>
         </div>
       </section>
@@ -238,7 +236,7 @@
       <div class="footer-item">
         <h3>Stay in touch</h3>
         <form class="subscribe">
-          <input type="text" placeholder="Subscribe our newsletter" />
+          <input type="text" placeholder="Subscribe to our newsletter" />
           <img src="./resources/png/paper122.png" alt="" />
         </form>
         <div class="socialmedia">
@@ -260,8 +258,8 @@
           <p>Terms & Conditions</p>
           <p>Privacy</p>
         </div>
-        <p class="right">Copyright &#169; 2015 - Tajam Creative</p>
       </div>
+      <p class="footer-item right">Copyright &#169; 2015 - Tajam Creative</p>
     </footer>
   </body>
 </html>
