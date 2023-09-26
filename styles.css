@@ -188,6 +188,18 @@ li {
   cursor: pointer;
 }
 
+.video-animation:hover {
+  cursor: pointer;
+  background-color: #67d7cc5a;
+  border-radius: 50%;
+}
+
+.video-animation:active {
+  background: linear-gradient(to right, #67d7cc 0%, #5289ac 60%);
+  box-shadow: 0 5px rgba(97, 20, 186, 0.468);
+  transform: translateY(4px);
+}
+
 .video-text {
   color: white;
   margin-top: 2%;
