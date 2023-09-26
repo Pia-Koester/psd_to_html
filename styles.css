@@ -335,6 +335,7 @@ max-width: 60%;
 .form-container {
  display: flex;
  flex-direction: column;
+ min-width: 40%;
  padding: 2rem;
 }
 
@@ -361,15 +362,15 @@ textarea {
 .list-right {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  flex-grow: 2;
+  padding: 4rem;
   max-width: 50%;
+
 }
 
 .logo-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:1.6rem;
+  row-gap:1.6rem; 
   margin-top: 2rem;
   /* place-items: center; */
 }
