@@ -175,6 +175,10 @@ li {
   margin: 1.5rem 0;
 }
 
+.our-story-text .button:hover {
+  color: white;
+}
+
 /* Styling for video section */
 .skyline {
   display: flex;
@@ -351,6 +355,10 @@ li {
   min-width: 80%;
 }
 
+.form .button:hover {
+  color: white;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -456,10 +464,15 @@ textarea {
   margin-right: 0.5rem;
   flex-grow: 1;
   text-align: center;
+  color: white;
 }
 
 .subscribe input::placeholder {
   color: white;
+}
+
+.subscribe input:focus::placeholder {
+  color: transparent;
 }
 
 .subscribe img {
