@@ -187,16 +187,18 @@ li {
   cursor: pointer;
 }
 
+/*Adding animation to the static play button */
 .video-animation:hover {
   cursor: pointer;
   background-color: #67d7cc5a;
   border-radius: 50%;
+  transition: 1s;
 }
 
 .video-animation:active {
   background: linear-gradient(to right, #67d7cc 0%, #5289ac 60%);
   box-shadow: 0 5px rgba(97, 20, 186, 0.468);
-  transform: translateY(4px);
+  transform: translateY(0.5rem);
 }
 
 .video-text {
@@ -211,10 +213,6 @@ li {
   align-items: center;
   padding-top: 4rem;
 }
-
-/* .expertise h2 {
-  padding-top: 2rem;
-} */
 
 .byline {
   font-family: "EB Garamond", serif;
@@ -469,6 +467,19 @@ textarea {
   padding: 0.8rem 1.5rem;
 }
 
+/*Adding animation to the static subscribe button */
+.subscribe img:hover {
+  cursor: pointer;
+  background-color: #67d7cc5a;
+  transition: 1s;
+}
+
+.subscribe img:active {
+  background: linear-gradient(to right, #67d7cc 0%, #5289ac 60%);
+  box-shadow: 0 5px rgba(97, 20, 186, 0.468);
+  transform: translateY(0.2rem);
+}
+
 .socialmedia img {
   width: 10%;
   margin: 2rem 0.5rem 0 0;
@@ -552,9 +563,10 @@ textarea {
     margin-top: 2rem;
     justify-items: center;
   }
-  
+
   #imprint {
-    padding: 1.2rem 1.5rem; }
+    padding: 1.2rem 1.5rem;
+  }
 
   .footer-grid {
     grid-template-columns: 1fr;
@@ -588,8 +600,8 @@ textarea {
     justify-content: space-between;
   }
 
-  .socialmedia{
-  display: flex;
-  justify-content: space-between;
+  .socialmedia {
+    display: flex;
+    justify-content: space-between;
   }
 }
